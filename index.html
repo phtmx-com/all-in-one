@@ -10,10 +10,7 @@
     <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="app" hx-get="http://localhost:9980" hx-trigger="load" hx-target="#app" hx-swap="innerHTML"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+    <div id="root" hx-get="http://localhost:9980/mobile-layout" hx-trigger="load" hx-target="#root" hx-swap="innerHTML"></div>
     <script type="module" src="/html/main.ts"></script>
   </body>
 </html>

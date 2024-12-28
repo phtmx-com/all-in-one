@@ -11,14 +11,19 @@
                     <a class="nav-link"
                        aria-current="page"
                        href="/"
-                       hx-get="/"
+                       hx-get="http://localhost:9980/"
                        hx-target="#app"
                        hx-swap="innerHTML"
                        hx-push-url="true"
                     >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/docs" hx-get="/docs" hx-target="#app" hx-swap="innerHTML" hx-push-url="true">Docs</a>
+                    <a class="nav-link"
+                       href="/docs"
+                       hx-get="http://localhost:9980/docs"
+                       hx-target="#app"
+                       hx-swap="innerHTML"
+                    >Docs</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
