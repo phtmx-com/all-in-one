@@ -6,6 +6,11 @@ use Phtmx\Application;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+// enable cors
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: *');
+
+
 $application  = new Application(
     __DIR__ . '/../routes',
     __DIR__ . '/../middlewares',
